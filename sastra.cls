@@ -104,7 +104,7 @@
 %\RequirePackage[authoryear,round]{natbib} 
 \RequirePackage[numbers,square]{natbib} 
 %\bibliographystyle{unsrt} (For M.Tech)
-\bibliographystyle{chicago} %(For B.Tech)
+\bibliographystyle{iitm} %(For B.Tech)
 
 \newcommand{\bibstyle@iitm}{\bibpunct{(}{)}{;}{a}{,}{,}%
      \gdef\NAT@biblabel##1{##1. }}
