@@ -83,7 +83,7 @@
 %% makes all tables and figures have single spacing automatically.
 \RequirePackage{setspace} 
 \RequirePackage{atbeginend} % used to redefine the list environs
-\setstretch{1.0}
+\setstretch{1.15}
 
 \BeforeBegin{itemize}{\vspace*{-5ex}\begin{singlespace}}
 \AfterEnd{itemize}{\end{singlespace}}
