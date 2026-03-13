@@ -71,7 +71,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Geometry and page layout
-\RequirePackage[a4paper,top=1in, bottom=1in, inner=1in, outer=0.8in, headsep=10pt]{geometry}%[2002/07/08]
+\RequirePackage[a4paper,top=1in, bottom=1in, inner=1.25in, outer=1in, headsep=10pt]{geometry}%[2002/07/08]
 \parskip 8pt
 
 \renewcommand{\@pnumwidth}{2.5em}
