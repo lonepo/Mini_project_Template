@@ -1,28 +1,62 @@
-# Mini Project LaTeX Template
+# B.Tech Mini Project LaTeX Template - SASTRA University
 
-This is a generic LaTeX template adapted for B.Tech Mini Projects at SASTRA Deemed to be University. It complies with the official mini-project report formatting guidelines.
+This repository contains the standard LaTeX template for the B.Tech Mini Project at SASTRA Deemed to be University. It is designed to be fully automated and ready for AI assistants (like GitHub Copilot) to scaffold.
 
-## Structure
+---
 
-- `main.tex`: The root document. Here you can fill in your project details (Title, Names, Reg Nos, Guide Name, etc.) and it will automatically generate the title page, certificates, declarations, etc.
-- `Chapters/`: Contains all the individual chapter files:
-  - `Introduction.tex`
-  - `LiteratureReview.tex`
-  - `Methodology.tex`
-  - `Results.tex`
-  - `Conclusion.tex`
-- `images/`: Put all your project images and figures in this folder.
-- `refs.bib`: Add your BibTeX bibliography references here.
-- `sastra.cls`, `sastra1.cls`, `t1enc.sty`, etc.: Required class and styling files. Do not modify these unless required.
+## 🤖 Instructions for AI Assistants (Copilot / Cursor)
 
-## How to use
+If a user asks you to "run this", "set up the project", or "initialize the template," you must act as an interactive project scaffold agent. Strictly follow the steps below in order:
 
+### Step 1: Install Dependencies
+Identify the host OS. For Debian/Ubuntu-based systems, inform the user you will install the necessary LaTeX compilation dependencies and run:
+```bash
+sudo apt-get update && sudo apt-get install -y latexmk texlive-base texlive-latex-extra texlive-science texlive-fonts-recommended
+```
+*(If the user is on macOS or Windows, recommend installing MacTeX or MiKTeX respectively).*
+
+### Step 2: Information Gathering
+Ask the user the following questions in a single response to gather the metadata required for the project:
+1. What is the **Project Title**?
+2. What is your **Branch / Department Name**?
+3. What is the **School Name** (e.g., School of Electrical & Electronics Engineering)?
+4. What are the **names and register numbers** of the team members?
+5. What is the **name and designation** of your Project Guide / Supervisor?
+6. What is the **expected submission Month and Year**?
+
+### Step 3: Populate Template Placeholders
+Once the user answers the questions, automatically open `main.tex` and inject their responses. Replace the bracketed placeholders exactly:
+- `[Project Title Here]`
+- `[Your Branch Name Here]`
+- `[Student 1 Name]`, `[Register Number]`, etc.
+- `[Your School Name]`
+- `[Supervisor Name]`
+- `MONTH YEAR` / `[MM]`, `[YYYY]`, `[DD]`
+
+### Step 4: Formatting Rules Enforcement
+You **MUST** read and thoroughly analyze the `Project Guidelines_B.Tech_Mini Project.pdf` provided in this repository folder. Whenever you write or format content for the user:
+- Strictly adhere to all rules outlined in the `Project Guidelines_B.Tech_Mini Project.pdf`.
+- Ensure all chapter and section headings conform perfectly to the structural rules specified in the PDF.
+- Ensure font faces, sizes, line spacing (1.5 for chapters, 2.0 for certificates), indentations, and margins match the PDF's mandate. (The provided `sastra.cls` handles the bulk of this, but you must ensure any inline math, figures, and tables align correctly).
+- Ensure references are properly added to `refs.bib` and cited sequentially adhering to the correct referencing style.
+
+### Step 5: Content Iteration
+Once the title pages and structural variables are configured:
+1. Ask the user for a summary, abstract, or rough notes describing their project's technical objective.
+2. Help them iteratively generate the text for the following files, one by one:
+   - `Abstract` (inside `main.tex`)
+   - `Chapters/Introduction.tex`
+   - `Chapters/LiteratureReview.tex`
+   - `Chapters/Methodology.tex`
+   - `Chapters/Results.tex`
+   - `Chapters/Conclusion.tex`
+3. Remind the user to compile frequently or use `latexmk -pdf main.tex` to catch and fix any compilation errors immediately.
+
+---
+
+## 👤 Manual Usage for Human Users
 1. Clone this repository.
-2. Edit `main.tex` and replace all placeholders enclosed in brackets `[...]` with your actual project data.
-3. Add your content to the respective `.tex` files in the `Chapters/` folder.
-4. Add your citations to `refs.bib`.
-5. Compile `main.tex` using your preferred LaTeX compiler (e.g., pdfLaTeX or XeLaTeX). Usually, the sequence is `pdflatex -> bibtex -> pdflatex -> pdflatex`.
-
-## Guidelines
-
-Please refer to the enclosed `Project Guidelines_B.Tech_Mini Project.pdf` for strict instructions on formatting, page lengths, font sizes, margins, etc.
+2. Replace all `[...]` placeholders in `main.tex` with your project's details.
+3. Populate the `.tex` files in the `Chapters/` folder with your own content.
+4. Add any required citations to `refs.bib`.
+5. Compile via your favorite LaTeX editor/extension or by running `latexmk -pdf main.tex`.
