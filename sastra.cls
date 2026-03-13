@@ -237,7 +237,7 @@
    %
    \def\certificate{%% A preliminary chapter
      \clearpage
- \centerline{\includegraphics[height=1.52in, width=5.63in]{sastra_logo_updated}}
+ \centerline{\includegraphics[height=1.52in, width=5.65in]{images/sas-2025-logo.jpg}}
 \begin{center}
 	\large{\textbf{SCHOOL OF ELECTRICAL \& ELECTRONICS ENGINEERING}}
 	{\textbf{THANJAVUR-613 401}}
@@ -252,7 +252,7 @@
 
  \def\declaration{%% A preliminary chapter
      \clearpage
-\centerline{\includegraphics[height=1.52in, width=5.63in]{sastra_logo_updated}}
+\centerline{\includegraphics[height=1.52in, width=5.65in]{images/sas-2025-logo.jpg}}
 \begin{center}
 	\large{\textbf{SCHOOL OF ELECTRICAL \& ELECTRONICS ENGINEERING}}
 	{\textbf{THANJAVUR-613 401}}
