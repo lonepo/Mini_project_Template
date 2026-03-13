@@ -68,9 +68,10 @@ Once the title pages and structural variables are configured:
 ## 👤 Manual Usage for Human Users
 
 1. Clone this repository.
-2. Install dependencies (LaTeX engine and latexmk) using the automated setup script. You can run `make setup`, or invoke the scripts directly (`setup.bat` on Windows, `./setup.sh` on Linux).
-3. Replace all `[...]` placeholders in `main.tex` with your project's details.
-4. Populate the `.tex` files in the `Chapters/` folder with your own content.
-5. Add any required citations to `refs.bib`.
-6. Compile the document to PDF using `make compile` or by running `latexmk -pdf main.tex`.
-7. Use `make clean` if you need to clear the compilation cache files.
+2. Open the folder in VS Code. It will prompt you to install **LaTeX Workshop** (the recommended extension) if you haven't already.
+3. Install dependencies (LaTeX engine, Perl, latexmk) using the automated setup script. You can run `make setup`, or invoke the scripts directly (`setup.bat` on Windows, `./setup.sh` on Linux). _Note: On Windows, you will need to restart your terminal and VS Code after installation to ensure MiKTeX and Perl are added to your PATH._
+4. Replace all `[...]` placeholders in `main.tex` with your project's details.
+5. Populate the `.tex` files in the `Chapters/` folder with your own content.
+6. Add any required citations to `refs.bib`.
+7. Compile the document to PDF. If using VS Code with LaTeX Workshop, simply save the file (Auto-build is configured) or click the build button. Alternatively, use `make compile` or run `latexmk -pdf main.tex` in your terminal.
+8. Use `make clean` if you need to clear the compilation cache files.
