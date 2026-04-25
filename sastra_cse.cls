@@ -71,7 +71,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Geometry and page layout
-\RequirePackage[a4paper,top=1in, bottom=1in, inner=1in, outer=0.8in, headsep=10pt]{geometry}%[2002/07/08]
+\RequirePackage[a4paper,top=1in, bottom=1in, inner=1.25in, outer=1in, headsep=10pt]{geometry}%[2002/07/08]
 \parskip 8pt
 
 \renewcommand{\@pnumwidth}{2.5em}
@@ -83,7 +83,7 @@
 %% makes all tables and figures have single spacing automatically.
 \RequirePackage{setspace} 
 \RequirePackage{atbeginend} % used to redefine the list environs
-\setstretch{1.0}
+\setstretch{1.15}
 
 \BeforeBegin{itemize}{\vspace*{-5ex}\begin{singlespace}}
 \AfterEnd{itemize}{\end{singlespace}}
@@ -103,15 +103,15 @@
 % with the iitm.bst makes things perfect.
 %\RequirePackage[authoryear,round]{natbib} 
 \RequirePackage[numbers,square]{natbib} 
-\bibliographystyle{unsrt} %(For M.Tech)
-%\bibliographystyle{chicago} %(For B.Tech)
+%\bibliographystyle{unsrt} (For M.Tech)
+\bibliographystyle{iitm} %(For B.Tech)
 
 \newcommand{\bibstyle@iitm}{\bibpunct{(}{)}{;}{a}{,}{,}%
      \gdef\NAT@biblabel##1{##1. }}
 %
 \setlength{\bibhang}{0pt}
-%\citestyle{iitm}
-\citestyle{unsrt_newen} %(For M.Tech)
+\citestyle{iitm}
+%\citestyle{unsrt_newen} %(For M.Tech)
 %\citestyle{chicago} %(For B.Tech)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -201,7 +201,7 @@
  \end{center}
   %\centerline{\psfig{figure=emblem.ps}}
 %  \centerline{\includegraphics{iitm.eps}}
-  \centerline{\includegraphics[height=1.52in, width=4.83in]{sastra_logo_updated}}
+  \centerline{\includegraphics[height=1.52in, width=4.83in]{sastra_logo}}
   %\vspace*{-0.15in}
   \begin{center}
     {\bf \large SCHOOL OF \@department\par}
@@ -237,9 +237,9 @@
    %
    \def\certificate{%% A preliminary chapter
      \clearpage
- \centerline{\includegraphics[height=1.52in, width=4.83in]{sastra_logo_updated}}
+ \centerline{\includegraphics[height=1.52in, width=5.65in]{images/sas-2025-logo.jpg}}
 \begin{center}
-	\large{\textbf{SCHOOL OF ELECTRICAL \& ELECTRONICS ENGINEERING}}
+	\large{\textbf{SCHOOL OF COMPUTING}}
 	{\textbf{THANJAVUR-613 401}}
 \end{center}
      \vspace*{36pt}
@@ -252,9 +252,9 @@
 
  \def\declaration{%% A preliminary chapter
      \clearpage
-\centerline{\includegraphics[height=1.52in, width=5.63in]{sastra_logo}}
+\centerline{\includegraphics[height=1.52in, width=5.65in]{images/sas-2025-logo.jpg}}
 \begin{center}
-	\large{\textbf{SCHOOL OF ELECTRICAL \& ELECTRONICS ENGINEERING}}
+	\large{\textbf{SCHOOL OF COMPUTING}}
 	{\textbf{THANJAVUR-613 401}}
 \end{center}
      \vspace*{36pt}
@@ -268,9 +268,9 @@
 
  \def\externalcertificate{%% A preliminary chapter
      \clearpage
- \centerline{\includegraphics[height=1.52in, width=5.63in]{sastra_logo}}
+ \centerline{\includegraphics[height=1.52in, width=4.83in]{sastra_logo}}
 \begin{center}
-	\large{\textbf{SCHOOL OF ELECTRICAL \& ELECTRONICS ENGINEERING}}
+	\large{\textbf{SCHOOL OF COMPUTING}}
 	{\textbf{THANJAVUR-613 401}}
 \end{center}
      \vspace*{36pt}
